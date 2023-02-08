@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'swiper/swiper-bundle.min.css';
+@import 'swiper/swiper.min.css';
+@import 'swiper/swiper-bundle.css';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+html, body{
+  max-width: 100%;
+}
+
+:root{
+  --swiper-theme-color: grey;
+}
