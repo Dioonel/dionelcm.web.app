@@ -9,6 +9,29 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 export class AppComponent {
   dark = false;
 
+  swiperConfig: any = {
+    slidesPerView: 'auto',
+    spaceBetween: 10,
+    loop: true,
+    grabCursor: true,
+    pagination: {
+      clickable: true,
+      dynamicBullets: true
+    },
+    autoplay: true,
+    breakpoints: {
+        300: {
+          slidesPerView: 1,
+        },
+        461: {
+          slidesPerView: 2,
+        },
+        769: {
+          slidesPerView: 3,
+        }
+    }
+}
+
   constructor(){
     Swiper.use([Navigation, Pagination, Autoplay]);
   }

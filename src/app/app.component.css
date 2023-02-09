@@ -68,7 +68,7 @@
   gap: 10px;
   flex-direction: column;
   padding: 5px;
-  border-radius: 5%;
+  border-radius: 10px;
   border: 4px solid transparent;
   text-align: left;
   font-size: 1.3em;
@@ -103,7 +103,7 @@
   margin-bottom: 3px;
   max-width: 100%;
   min-height: 25px;
-  max-height: 80px;
+  max-height: 110px;
 }
 
 .tag{
@@ -380,6 +380,105 @@
 .dark .dark-mode-btn{
   background-color: rgb(85, 85, 85);
   color: white;
+}
+
+@media screen and (width <= 768px){
+  .container{
+    max-width: 430px;
+    margin: auto;
+  }
+  .name{
+    font-size: 3.2em;
+  }
+  .position{
+    font-size: 1.7em;
+  }
+  .my-info{
+    font-size: 1.5em;
+  }
+  .avatar{
+    width: 100px;
+  }
+  .dark-mode-btn{
+    height: 32px;
+    width: 32px;
+    padding: 3px;
+  }
+  .title{
+    font-size: 2.6em;
+    margin-top: 30px;
+  }
+  .swiper-container{
+    margin-top: 8px;
+  }
+  .project{
+    min-height: 270px;
+  }
+  .project h2{
+    font-size: 1.45em;
+  }
+  .tecno-p{
+    padding: 0px 40px;
+    flex-wrap: wrap;
+  }
+  .skill{
+    width: 50%;
+    font-size: 1.6em;
+  }
+  .contact-img{
+    height: 65px;
+  }
+  .contact-img:hover{
+    height: 75px;
+  }
+  .contact-title{
+    margin-top: 60px;
+    padding-top: 20px;
+  }
+}
+
+@media screen and (width <= 460px){
+  .container{
+    max-width: 350px;
+    margin: auto;
+  }
+  .about{
+    flex-direction: column-reverse;
+  }
+  .position{
+    margin-bottom: 5px;
+  }
+  .dark-mode-btn{
+    height: 38px;
+    width: 38px;
+    padding: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  .project{
+    min-height: 240px;
+  }
+  .project h2{
+    font-size: 1.5em;
+  }
+  .project .project-desc{
+    font-size: 1.1em;
+  }
+  .tecno-p{
+    padding: 0px 32px;
+    flex-wrap: wrap;
+  }
+  .contact-img{
+    height: 60px;
+  }
+  .contact-img:hover{
+    height: 70px;
+  }
+  .contact-title{
+    margin-top: 60px;
+    padding-top: 20px;
+  }
 }
 
 
