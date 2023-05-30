@@ -38,6 +38,10 @@
   border-radius: 50%;
 }
 
+.avatar:hover{
+  cursor: pointer;
+}
+
 .my-info{
   font-size: 1.6em;
   white-space: pre-wrap;
@@ -372,6 +376,7 @@
 
 .dark-mode-btn:hover{
   border: 2px solid rgb(153, 153, 153);
+  cursor: pointer;
 }
 
 .dark .dark-mode-btn{

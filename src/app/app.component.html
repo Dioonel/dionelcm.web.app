@@ -20,7 +20,7 @@ I love to work with cloud services and automate tasks.
 
       </div>
       <div class="about-img">
-        <img src="https://i.playboard.app/p/429de9a6fa46334904943a80d8be1b0a/default.jpg" class="avatar">
+        <img [src]="'assets/images/' + avatar + '.png'" class="avatar" (click)="switchAvatar()">
       </div>
     </div>
 
@@ -95,7 +95,7 @@ Customize your user, add products to your cart, create posts and comment on them
 
 
           <ng-template swiperSlide>
-            <a href="https://inti-front.web.app" target="_blank">
+            <a href="https://github.com/Dioonel/Portafolio-INTI-Frontend" target="_blank">
               <div class="project color1">
                 <h2>Argentina Programa Portafolio (Front)</h2>
                 <p class="project-desc">Angular portfolio.
@@ -130,7 +130,7 @@ Final project for #YoProgramo in Argentina Programa course.
             <a href="https://diolingo-jp.web.app" target="_blank">
               <div class="project color1">
                 <h2>Diolingo (Front)</h2>
-                <p class="project-desc">App to save japanese notes, vocabulary and help me study the language overall.</p>
+                <p class="project-desc">App to save japanese vocabulary and help me study the language with minigames.</p>
                 <p class="tag-wrapper">
                   <span class="tag angular">Angular</span>
                   <span class="tag typescript">TypeScript</span>

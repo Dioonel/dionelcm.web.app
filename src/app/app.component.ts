@@ -8,6 +8,7 @@ import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
 })
 export class AppComponent {
   dark = false;
+  avatar: 1 | 2 | 3 | 4 | 5 = 1;
 
   swiperConfig: any = {
     slidesPerView: 'auto',
@@ -34,5 +35,9 @@ export class AppComponent {
 
   constructor(){
     Swiper.use([Navigation, Pagination, Autoplay]);
+  }
+
+  switchAvatar() {
+    this.avatar = this.avatar < 5 ? this.avatar + 1 : 1 as any;
   }
 }
