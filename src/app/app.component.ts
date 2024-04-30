@@ -35,9 +35,17 @@ export class AppComponent {
 
   constructor(){
     Swiper.use([Navigation, Pagination, Autoplay]);
+    if(localStorage.getItem('dark') === 'true') {
+      this.dark = true;
+    }
   }
 
   switchAvatar() {
     this.avatar = this.avatar < 5 ? this.avatar + 1 : 1 as any;
+  }
+
+  toggleMode() {
+    this.dark = !this.dark;
+    localStorage.setItem('dark', this.dark ? 'true' : 'false');
   }
 }
