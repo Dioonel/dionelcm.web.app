@@ -19,7 +19,7 @@
   max-width: 100%;
 }
 
-.name, .position, .my-info, .title, .project, .tag-wrapper, .subtitle, .skill, .achievement{
+.name, .position, .my-info, .title, .project, .tag-wrapper, .subtitle, .skill{
   font-family: 'Inter', sans-serif;
 }
 
@@ -41,12 +41,13 @@
 .avatar:hover{
   cursor: pointer;
   -webkit-filter: brightness(80%);
+  filter: brightness(80%);
 }
 
 .my-info{
   font-size: 1.6em;
   white-space: pre-wrap;
-  color: rgb(68, 68, 68);
+  color: #444444;
 }
 
 .title{
@@ -63,7 +64,7 @@
 }
 
 .swiper-container .mySwiper a{
-  color: black;
+  color: #000000;
   text-decoration: none;
   margin: 5px;
 }
@@ -82,19 +83,19 @@
 }
 
 .color1{
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
               linear-gradient(to right, #4983d3, #72b4cb) border-box;
 }
 
 .color2{
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
               linear-gradient(to right, #72b4cb, #4983d3) border-box;
 }
 
 .project:hover{
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, grey, black) border-box;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.4) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(to right, #808080, #000000) border-box;
+  box-shadow: #00000080 0px 2px 4px, #00000066 0px 7px 13px -3px, #0000004d 0px -3px 0px inset;
 }
 
 .project-desc{
@@ -121,23 +122,15 @@
   height: 24px;
 }
 
-.angular{
-  background-color: #dd1b16;
+.typescript, .postgress, .python{
+  background-color: #2973bd;
 }
 
-.typescript{
-  background-color: #2d79c7;
+.css, .twitter{
+  background-color: #55aae7;
 }
 
-.css{
-  background-color: #51a3dc;
-}
-
-.material{
-  background-color: #ffa726;
-}
-
-.node{
+.node, .mongo, .spring, .sharp, .puppeteer{
   background-color: #3c873a;
 }
 
@@ -145,64 +138,24 @@
   background-color: #e0234e;
 }
 
-.mongo{
-  background-color: #47a248;
+.angular, .passport{
+  background-color: #BB35F4;
 }
 
-.passport{
-  background-color: purple;
+.aws, .javascript, .material, .jwt{
+  background-color: #ffbb00;
 }
 
-.jwt{
-  background-color: rgb(255, 70, 163);
-}
-
-.python{
-  background-color: #3777a7;
-}
-
-.twitter{
-  background-color: #1da1f2;
-}
-
-.aws{
-  background-color: #ff9a00;
-}
-
-.express{
+.express, .multer{
   background-color: #000000;
 }
 
 .html{
-  background-color: #e34c26;
-}
-
-.javascript{
-  background-color: #f7df1e;
-}
-
-.spring{
-  background-color: #6db33f;
+  background-color: #e36826;
 }
 
 .java{
   background-color: #e11f21;
-}
-
-.postgres{
-  background-color: #336791;
-}
-
-.puppeteer{
-  background-color: #1c8982;
-}
-
-.sharp{
-  background-color: #47a248;
-}
-
-.multer{
-  background-color: #a2a2a2;
 }
 
 .techno-skills{
@@ -211,12 +164,11 @@
 
 .technologies-full, .skills-full{
   margin-top: 14px;
-  /* background-color: rgb(233, 233, 233); */
   text-align: center;
   padding: 14px 0px 14px 0px;
   border-radius: 10px;
   border: 4px solid transparent;
-  background: linear-gradient(white, white) padding-box,
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
               linear-gradient(to right, #4983d3, #72b4cb) border-box;
 }
 
@@ -254,51 +206,6 @@
   width: 25%;
 }
 
-.achievements{
-  margin-top: 25px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.achievement{
-  min-width: 32%;
-  min-height: 200px;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  padding: 5px;
-  border-radius: 5%;
-  border: 4px solid transparent;
-  text-align: left;
-  font-size: 1.3em;
-  user-select: none;
-}
-
-.achievement-desc{
-  white-space: pre-wrap;
-  font-size: 1.1em;
-}
-
-.achievement-date{
-  font-style: italic;
-}
-
-.arg-pro-color{
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #3bcbff,  #2a78c5) border-box;
-}
-
-.platzi-color{
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #9dd143, #5a982d) border-box;
-}
-
-.cambridge-color{
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #ffdd00, rgb(255, 98, 55)) border-box;
-}
-
 .contact{
   margin-top: 25px;
   margin-bottom: 30px;
@@ -306,7 +213,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  /* background-color: rgb(233, 233, 233); */
   padding: 15px 0px 15px 0px;
   max-height: 112px;
 }
@@ -314,12 +220,12 @@
 .contact-title{
   margin-top: 80px;
   padding-top: 30px;
-  border-top: 1px solid rgb(233, 233, 233);
+  border-top: 1px solid #e9e9e9;
   text-align: center;
 }
 
 .dark .contact-title{
-  border-top: 1px solid rgb(44, 44, 44);
+  border-top: 1px solid #2c2c2c;
 }
 
 .contact-img{
@@ -333,7 +239,7 @@
 }
 
 .dark{
-  background-color: rgb(27, 27, 27);
+  background-color: #1b1b1b;
 }
 
 .dark .title, .dark .name, .dark .project h2{
@@ -349,28 +255,28 @@
 }
 
 .dark .technologies-full, .dark .skills-full, .dark .contact{
-  background: linear-gradient(rgb(27, 27, 27), rgb(27, 27, 27)) padding-box,
+  background: linear-gradient(#1b1b1b, #1b1b1b) padding-box,
               linear-gradient(to right, #4983d3, #72b4cb) border-box;
 }
 
 .dark .color1{
-  background: linear-gradient(rgb(27, 27, 27), rgb(27, 27, 27)) padding-box,
+  background: linear-gradient(#1b1b1b, #1b1b1b) padding-box,
               linear-gradient(to right, #4983d3, #72b4cb) border-box;
 }
 
 .dark .color2{
-  background: linear-gradient(rgb(27, 27, 27), rgb(27, 27, 27)) padding-box,
+  background: linear-gradient(#1b1b1b, #1b1b1b) padding-box,
               linear-gradient(to right, #72b4cb, #4983d3) border-box;
 }
 
 .dark .project:hover{
-  background: linear-gradient(rgb(27, 27, 27), rgb(27, 27, 27)) padding-box,
-              linear-gradient(to right, grey, black) border-box;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px, rgba(0, 0, 0, 0.4) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+  background: linear-gradient(#1b1b1b, #1b1b1b) padding-box,
+              linear-gradient(to right, #808080, #000000) border-box;
+  box-shadow: #00000080 0px 2px 4px, #00000066 0px 7px 13px -3px, #0000004d 0px -3px 0px inset;
 }
 
 .light{
-  background-color: white;
+  background-color: #ffffff;
 }
 
 .dark-mode-btn{
@@ -380,17 +286,17 @@
   width: 38px;
   padding: 5px;
   border-radius: 10px;
-  background-color: rgb(233, 233, 233);
+  background-color: #e9e9e9;
 }
 
 .dark-mode-btn:hover{
-  border: 2px solid rgb(153, 153, 153);
+  border: 2px solid #999999;
   cursor: pointer;
 }
 
 .dark .dark-mode-btn{
-  background-color: rgb(85, 85, 85);
-  color: white;
+  background-color: #555555;
+  color: #ffffff;
 }
 
 @media screen and (width <= 768px){
@@ -451,7 +357,6 @@
 @media screen and (width <= 460px){
   .container{
     max-width: 350px;
-    margin: auto;
   }
   .about{
     flex-direction: column-reverse;
@@ -478,21 +383,5 @@
   }
   .tecno-p{
     padding: 0px 32px;
-    flex-wrap: wrap;
-  }
-  .contact-img{
-    height: 60px;
-  }
-  .contact-img:hover{
-    height: 70px;
-  }
-  .contact-title{
-    margin-top: 60px;
-    padding-top: 20px;
   }
 }
-
-
-/* ::ng-deep .swiper-button-prev:hover, ::ng-deep .swiper-button-next:hover{
-  color: blue;
-} */
